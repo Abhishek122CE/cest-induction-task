@@ -168,16 +168,16 @@ body{
     
     position: absolute;
     overflow: hidden;
-    height: 35rem;
+    height: 40rem;
     width: 766px;
     margin-left: 45rem;
-    margin-top: 3rem;
+    margin-top: 0.5rem;
 
 }
 .slide_images{
     display: flex;
     /* flex-direction: column; */
-    width: 766px;
+    width: 777px;
     animation: slide 12s infinite ease-in;
 }
 .slide_images img{
@@ -191,15 +191,16 @@ body{
     display: flex;
     position: absolute;
     width: 3064px;
-    height: 4rem;
+    height: 5.6rem;
     animation: slide 12s infinite ease-in;
     /* z-index: -3; */
     /* overflow: hidden; */
 }
 .image_content{
-    width: 766px;
-    height: 4rem;
+    width: 768px;
+    height: 5.6rem;
     font-family: 'Indie Flower';
+    font-size: 21px;
     position: relative;
     overflow: hidden;
     text-align: center;
