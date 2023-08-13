@@ -4,7 +4,8 @@
 }
 
 body{
-   background: linear-gradient(to right, #270F36,  #642B6B,  #C86B98, #F09F9C, #FFC19F, #FD9D7F);
+   /* background: linear-gradient(to right, #270F36,  #642B6B,  #C86B98, #F09F9C, #FFC19F, #FD9D7F); */
+    background: url("https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60")  no-repeat center center/cover;
     
     overflow: auto;
     height: 100vh;
@@ -22,8 +23,8 @@ body{
     /* background-color: rgb(43,43,43); */
 }
 #logo{
-    height: 45px;
-    width: 45px;
+    height: 70px;
+    width: 70px;
     border-radius: 50%;
 }
 #logo:hover{
@@ -37,12 +38,12 @@ body{
     flex-direction: row;
     margin-left: 55rem;
     font-family: 'Cinzel';
-    font-weight: 500;
-    color: rgb(169, 18, 121);
+    font-weight: 800;
+    color: rgb(111, 8, 78);
 }
 .nav_heading{
     margin:  12px 2rem 0px  0.5rem;
-    font-size: 25px;
+    font-size: 30px;
 }
 /* #heading{
     margin-top: 40px;
@@ -53,9 +54,9 @@ body{
     /* height:100vh ; */
 }
 .heading_primary{
-    height: 9rem;
+    height: 6rem;
     font-weight: 200;
-    font-size: 4rem;
+    font-size: 3rem;
     text-transform: uppercase;
     /* white-space: nowrap; */
 
@@ -78,24 +79,25 @@ body{
     /* text-overflow: ellipsis; */
     font-family: 'Playball';
     font-weight: 150;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     word-spacing: 2px;
+    color: brown;
     /* color: blueviolet; */
 }
 #right_content{
     height: 30rem;
     width: 30rem;
-    margin: 5rem 0.5rem 2rem 4rem;
+    margin: 3rem 0.5rem 2rem 4rem;
 }
 #highlited_content:hover{
     cursor: pointer;
-    animation: blink 4s infinite;
+    animation: blink 2.5s infinite;
 }
 #shape{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 9rem;
+    height: 9.5rem;
     width: 35rem;
     margin-top: 24px;
     background-color: #050505;
@@ -169,7 +171,7 @@ body{
     height: 35rem;
     width: 766px;
     margin-left: 45rem;
-    margin-top: 5rem;
+    margin-top: 3rem;
 
 }
 .slide_images{
@@ -197,7 +199,7 @@ body{
 .image_content{
     width: 766px;
     height: 4rem;
-    font-family: 'Bad Script';
+    font-family: 'Indie Flower';
     position: relative;
     overflow: hidden;
     text-align: center;
@@ -271,27 +273,27 @@ button{
 @keyframes blink {
     0%{
         opacity: 0;
-        color: blueviolet;
+        color: burlywood;
     }
     20%{
         opacity: 1;
-        color: burlywood;
+        color: rgb(122, 18, 219);
     }
     40%{
         opacity: 0;
-        color: chartreuse;
+        color: rgb(64, 121, 7);
     }
     60%{
         opacity: 1;
-        color: cadetblue;
+        color: rgb(8, 135, 140);
     }
     80%{
         opacity: 0;
-        color: coral;
+        color: rgb(214, 63, 8);
     }
     100%{
         opacity: 1;
-        color: aliceblue;
+        color: rgb(43, 43, 43);
     }
 }
 @keyframes slide{
