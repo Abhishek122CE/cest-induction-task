@@ -188,7 +188,7 @@ body{
     margin-bottom: 12px;
     /* margin-left: 24px; */
 }
-#slide_content{
+.slide_content{
     display: flex;
     position: absolute;
     width: 3064px;
@@ -197,10 +197,7 @@ body{
     /* z-index: -3; */
     /* overflow: hidden; */
 }
-.slide_images:hover{
-    animation-play-state: paused;
-    
-}
+
 .image_content{
     width: 768px;
     height: 5.6rem;
