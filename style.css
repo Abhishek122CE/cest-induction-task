@@ -172,6 +172,7 @@ body{
     width: 766px;
     margin-left: 45rem;
     margin-top: 0.5rem;
+   
 
 }
 .slide_images{
@@ -195,6 +196,10 @@ body{
     animation: slide 12s infinite ease-in;
     /* z-index: -3; */
     /* overflow: hidden; */
+}
+.slide_images:hover{
+    animation-play-state: paused;
+    
 }
 .image_content{
     width: 768px;
