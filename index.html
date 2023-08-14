@@ -7,7 +7,7 @@
     <link rel="website icon" id="web_icon" type="png" href="CEST White Logo.png" style="border-radius: 20px;">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" media="screen and (max-width:1500px)" href="screen_change.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Indie Flower|Merriweather Sans|Tilt Prism|Cinzel|Playball|Monoton|Bad Script">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Indie Flower|Merriweather Sans|Tilt Prism|Cinzel|Playball|Monoton|Bad Script|Edu SA Beginner">
 </head>
 <body>
     <nav id="nav_bar">
@@ -28,12 +28,52 @@
             </div>
             <h3 class="heading_secondary" style="font-family: 'Monoton';">induction</h3>
         </div>
-        <div>
+        <div id="about_content">
             <span class="main_content" > Commodi obcaecati atque fugiat voluptates mollitia tempore odit fugit nam eum in <span id="highlited_content" class="main_content" style="font-family:'Bad Script';color: rgb(95, 57, 8);">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </span>debitis, maxime aliquam aut voluptas impedit.
             </span>
         </div>
-        
-        <button id="btn" type="button">EXPLORE</button>
+        <div id="about_me">
+            <div id="pseudo_navBar">
+            <div id="back_icon">
+                <i class="fa-solid fa-circle-chevron-left fa-xl" style="color: #be570e;"
+                onclick="document.getElementById('about_content').style.display='block'
+                         document.getElementById('about_me').style.display='none'"
+                ></i>
+            </div>
+            </div>
+            <div id="my_details">
+            <p class="myself">Hi, I'm Abhishek Kumar Gotam. It's a pleasure to meet you. I'm here at this event because I'm passionate about web development. I've beenworking in web developmen for past 4 months. I'm really excited to learn from others and share ideas.</p>
+            <p class="myself"> I'm a passionate individual with a curiosity that knows no bounds. My journey through life has been filled with a thirst for knowledge, a love for creativity, and a drive to make a positive impact on the world around me. As an avid explorer of ideas and a seeker of solutions, I constantly seek to expand my horizons, whether it's through delving into the depths of literature, embracing the challenges of science and technology, or connecting with diverse cultures and perspectives. I'm excited to engage in meaningful conversations, share insights, and work collaboratively to tackle the fascinating challenges that come our way. Let's embark on this intellectual adventure together and make the most of every opportunity to learn, grow, and contribute to the ever-evolving tapestry of life..</p>
+            <p class="myself">
+                <h1 class="education" style="font-family:'Cinzel';">Education</h1>
+                <div class="insti_logo">
+                <img src="logo_nitrkl.jpg" alt="nitrkl">
+                <img src="logoggps.png" alt="ggps">
+                <img src="logoggps.png" alt="ggps">
+                </div>
+            </p>
+            <p class="myself">
+                <h1 class="hobbies" style="font-family:'Cinzel';">HOBBIES</h1>
+                <h5 class="hobbies_category">Playing Video Games</h5>
+                <h5 class="hobbies_category">Reading Novel</h5>
+                <h5 class="hobbies_category">Swimming & Playing Chess</h5>
+                <h5 class="hobbies_category">Cooking</h5>
+
+            </p>
+            <p class="myself">
+                <h1 class="skills" style="font-family:'Cinzel';">SKILLS</h1>
+                <h3 class="skills_category">Industry Knowledge</h3>
+                <h3 class="skills_category">Tools & Technologies</h3>
+                <h3 class="skills_category">Interpersonal Skills</h3>
+                <h3 class="skills_category">Miscellaneous</h3>
+            </p>
+            
+        </div>
+        </div>
+        <button id="btn" 
+        onclick="document.getElementById('about_content').style.display='none'
+        document.getElementById('about_me').style.display='block'"
+        >KNOW MORE</button>
         
         <div id="shape">
             <div class="cube">
@@ -48,7 +88,10 @@
         </div>
         
     </div>
-    <div id="left_content">
+    <div id="left_content"
+    onclick="document.getElementById('slide_images').style.animationPlayState='paused'
+             document.getElementById('slide_content').style.animationPlayState='paused'
+             document.getElementById('play-pause').style.display='block'">
         <div id="slide_images">
             <img src="ellora_caves.jpg" alt="ellora_caves">
             <img src="mysore.jpg" alt="mysore">
@@ -65,11 +108,18 @@
         </div>
     </div>
 </div>
+<div id="play-pause">
+    <i class="fa-regular fa-circle-play fa-8x" style="color: #000000;"
+    onclick="document.getElementById('slide_images').style.animationPlayState='running'
+    document.getElementById('slide_content').style.animationPlayState='running'
+    document.getElementById('play-pause').style.display='none'"></i>
+
+</div>
     <!-- <footer>
         <div id="icons">
-        <i id="facebook" class="fa-brands fa-facebook  fa-2xs"  ></i>
-        <i id="instagram" class="fa-brands fa-instagram  fa-2xs"></i>
-        <i id="twitter" class="fa-brands fa-twitter  fa-2xs"
+        <i id="facebook" class="fa-brands fa-facebook  fa-2x"  ></i>
+        <i id="instagram" class="fa-brands fa-instagram  fa-2x"></i>
+        <i id="twitter" class="fa-brands fa-twitter  fa-2x"
         style="color:  #1da1f2;"
         ></i>
     </div>

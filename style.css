@@ -6,7 +6,7 @@
 body{
    /* background: linear-gradient(to right, #270F36,  #642B6B,  #C86B98, #F09F9C, #FFC19F, #FD9D7F); */
     background: url("https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60")  no-repeat center center/cover;
-    
+    /* background-image: radial-gradient( circle 321px at 8.3% 75.7%,  rgba(209,247,241,1) 0%, rgba(249,213,213,1) 81% ); */
     overflow: auto;
     height: 100vh;
 }
@@ -72,16 +72,75 @@ body{
    /* font-family: &quot;Caveat variant0&quot;, Tofu;  */
 
 }
-/* #content{
-    white-space: nowrap;
-} */
+#about_content{
+    display: block;
+    animation: fade 1.5s 1;
+}
+#about_me{
+    display: none;
+    /* text-align: center; */
+    
+    position: relative;
+    /* background-image: linear-gradient( 184.1deg,  rgba(249,255,182,1) 44.7%, rgba(226,255,172,1) 67.2% ); */
+    /* background-image: radial-gradient( circle 311px at 8.6% 27.9%,  rgba(62,147,252,0.57) 12.9%, rgba(239,183,192,0.44) 91.2% ); */
+    /* background-image: radial-gradient( circle 369px at -2.9% 12.9%,  rgba(247,234,163,1) 0%, rgba(236,180,238,0.56) 46.4%, rgba(163,203,247,1) 100.7% ); */
+    background-image: linear-gradient( 174.2deg,  rgba(255,244,228,1) 7.1%, rgba(240,246,238,1) 67.4% );
+    height:12rem ;
+    width: 32rem;
+    overflow: auto;
+    animation: fade 1.5s 1;
+    /* margin-bottom: 12rem; */
+    /* border: 3px solid black;
+    border-radius: 4px; */
+
+}
+#back_icon{
+    position: relative;
+    /* margin-top: 30px; */
+    margin-left: 4px;
+    /* margin-bottom: -8px; */
+    /* height: 24px;
+    width: 30rem;
+    background-color: #606060; */
+}
+#pseudo_navBar{
+    position: relative;
+    height: 24px;
+    width: 31.6rem;
+    /* margin-top: -3px; */
+    background-color:#551342;
+}
+#my_details{
+    margin-top: 4px;
+    /* padding-left: 8px; */
+}
+.insti_logo{
+    display: flex;
+    flex-direction: column;
+}
+.insti_logo img{
+    height: 70px;
+    width: 70px;
+    margin: 4px 4px 16px 8px ;
+}
 .main_content{
     /* text-overflow: ellipsis; */
     font-family: 'Playball';
     font-weight: 150;
     font-size: 1.6rem;
     word-spacing: 2px;
-    color: brown;
+    color: rgb(24, 82, 207);
+    /* margin-left: 8px; */
+    /* color: blueviolet; */
+}
+.myself{
+    /* text-overflow: ellipsis; */
+    font-family: 'Edu SA Beginner';
+    font-weight: 150;
+    font-size: 21px;
+    word-spacing: 2px;
+    color: rgb(207, 64, 24);
+    /* margin-left: 8px; */
     /* color: blueviolet; */
 }
 #right_content{
@@ -179,7 +238,7 @@ body{
     display: flex;
     /* flex-direction: column; */
     width: 777px;
-    animation: slide 20s infinite ease-in;
+    animation: slide 16s infinite ease-in;
 }
 #slide_images img{
     width: 766px;
@@ -192,8 +251,9 @@ body{
     display: flex;
     position: absolute;
     width: 3064px;
-    height: 5.6rem;
-    animation: slide 20s infinite ease-in;
+    height: 6.6rem;
+    animation: slide 16s infinite ease-in;
+    
     /* z-index: -3; */
     /* overflow: hidden; */
 }
@@ -201,8 +261,8 @@ body{
 
 .image_content{
     width: 768px;
-    height: 5.6rem;
-    font-family: 'Indie Flower';
+    height: 6.6rem;
+    font-family: 'Edu SA Beginner';
     font-size: 21px;
     position: relative;
     overflow: hidden;
@@ -256,12 +316,21 @@ button{
 #btn{
     border-radius: 12px;
     height: 30px;
-    width: 100px ;
+    width: 120px ;
     margin-top: 12px;
     font-family: 'Cinzel';
     font-weight: 500;
     font-size: medium;
    color: rgb(220, 159, 27);
+}
+#play-pause{
+    display: none;
+    position: absolute;
+    top: 40%;
+    left: 68%;
+    z-index: 5;
+    opacity: 1;
+    animation: fade 1.5s 1;
 }
 @keyframes logo_animation {
     100%{
@@ -326,10 +395,44 @@ button{
         transform: translateX(-2298px);
     }
 }
+@keyframes fade {
+    0%{
+        opacity: 0.2;
+    }
+    25%{
+        opacity: 0.4;
+    }
+    50%{
+        opacity: 0.6;
+    }
+    75%{
+        opacity: 0.8;
+    }
+    100%{
+        opacity: 1;
+    }
+   
+    
+}
+::-webkit-scrollbar{
+    width: 6px;
+}
+::-webkit-scrollbar-track{
+    background: #551342;
+    border-radius: 12px;
+}
+::-webkit-scrollbar-thumb{
+    background:#fffc97;
+    border-radius: 12px;
+}
 footer{
    bottom: 0;
-   /* position:absolute; */
-   z-index: -1;
+   position:absolute;
+   height: 20px;
+   width: 100vmin;
+   /* z-index: -1; */
+   /* margin-left: 65rem; */
+   /* margin-bottom: -4px; */
 }
 /* #icons{
     margin-top: -10rem;
