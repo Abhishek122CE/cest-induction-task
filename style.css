@@ -8,7 +8,8 @@ body{
     background: url("https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60")  no-repeat center center/cover;
     /* background-image: radial-gradient( circle 321px at 8.3% 75.7%,  rgba(209,247,241,1) 0%, rgba(249,213,213,1) 81% ); */
     overflow: auto;
-    height: 100vh;
+    /* height: 100vh; */
+    /* width: ; */
 }
 #nav_bar{
     position: sticky;
@@ -117,11 +118,19 @@ body{
 .insti_logo{
     display: flex;
     flex-direction: column;
+    
 }
 .insti_logo img{
     height: 70px;
     width: 70px;
-    margin: 4px 4px 16px 8px ;
+    margin: 4px 8px 16px 8px ;
+}
+.education_info{
+    display: flex;
+    flex-direction: row;
+    border: 1.5px solid saddlebrown;
+    margin: 0px 0px 8px 0px ;
+    border-radius: 5px;
 }
 .main_content{
     /* text-overflow: ellipsis; */
