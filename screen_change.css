@@ -80,6 +80,8 @@ body{
     width: 370px;
 }
 #right_content{
+    /* margin: 0.1rem 0rem 0rem 4.5px;
+    height: 27rem; */
     margin-left: 4.5px;
     width: 370px;
 }
@@ -99,7 +101,7 @@ body{
 }
 #left_content{
     position: relative;
-    margin:180px 0px 12px 2px;
+    margin: 150px 0px 12px 2px;
     /* position: absolute; */
     overflow: hidden;
     height: 24rem;
@@ -150,6 +152,9 @@ body{
 #play-pause{
     display: none;
     position: relative;
+    height: 6rem;
+    width: 370px;
+    
     /* top: 40%;
     left: 68%; */
     z-index: 5;

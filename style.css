@@ -121,7 +121,7 @@ body{
     margin-left: 55rem;
     font-family: 'Cinzel';
     font-weight: 800;
-    color: rgb(111, 8, 78);
+    color: rgb(239, 71, 141);
 }
 .nav_heading{
     margin:  12px 2rem 0px  0.5rem;
@@ -136,20 +136,30 @@ body{
     /* height:100vh ; */
 }
 .heading_primary{
-    height: 6rem;
-    font-weight: 100;
-    font-size: 3.3rem;
-    text-transform: uppercase;
-    /* white-space: nowrap; */
-
-    color: rgb(186, 125, 240);
+    /* font-family: ; */
+    letter-spacing: 2px;
+    font-size: 6.6rem;
+    font-weight: bold;
+    background-image: linear-gradient(
+     to right,
+     #462523 0,
+            #cb9b51 22%, 
+     #f6e27a 45%,
+     #f6f2c0 50%,
+     #f6e27a 55%,
+     #cb9b51 78%,
+     #462523 100%
+     );
+    color:transparent;
+    -webkit-background-clip:text;
+    /* background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+                radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%); */
 }
 .heading_secondary{
     /* height: 5rem; */
     font-weight: 500;
     font-size: 3rem;
-    
-    margin-bottom: 4px 0px 8px 0px;
+    margin: -18px 0px 8px 0px;
     color:rgb(248, 173, 94);
    /* font-family: &quot;Caveat variant0&quot;, Tofu;  */
 
@@ -181,15 +191,16 @@ body{
     position: relative;
     /* margin-top: 30px; */
     margin-left: 4px;
-    /* margin-bottom: -8px; */
+    margin-top: 5px;
     /* height: 24px;
     width: 30rem;
     background-color: #606060; */
 }
 #pseudo_navBar{
     position: relative;
-    height: 24px;
+    /* height: 34px; */
     width: 31.6rem;
+    margin-top: 3px;
     /* margin-top: -3px; */
     background-color:#551342;
 }
@@ -283,7 +294,7 @@ body{
 }
 #highlited_content:hover{
     cursor: pointer;
-    animation: blink 2.5s infinite;
+    animation: blink 1.5s infinite;
 }
 
 #left_content{
@@ -393,8 +404,8 @@ button{
     top: 40%;
     left: 68%;
     z-index: 5;
-    opacity: 1;
-    animation: fade 1.5s 1;
+    /* opacity: 1; */
+    animation: fade 1.5s 1 linear;
 }
 @keyframes logo_animation {
     100%{
@@ -410,26 +421,35 @@ button{
 @keyframes blink {
     0%{
         opacity: 0;
+        /* color: burlywood; */
+    }
+    25%{
+        opacity: 1;
         color: burlywood;
     }
-    20%{
+    30%{
         opacity: 1;
-        color: rgb(122, 18, 219);
+        color: burlywood;
     }
-    40%{
+    50%{
         opacity: 0;
-        color: rgb(64, 121, 7);
+        /* color: rgb(64, 121, 7); */
     }
-    60%{
+    55%{
+        opacity: 0;
+        /* color: rgb(8, 135, 140); */
+    }
+    75%{
         opacity: 1;
-        color: rgb(8, 135, 140);
+        color: rgb(214, 8, 138);;
     }
     80%{
-        opacity: 0;
-        color: rgb(214, 63, 8);
-    }
-    100%{
         opacity: 1;
+        color: rgb(214, 8, 138);
+    }
+   
+    100%{
+        opacity: 0;
         color: rgb(43, 43, 43);
     }
 }
