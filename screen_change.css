@@ -93,6 +93,10 @@ body{
     /* margin-left: 8px; */
     /* color: blueviolet; */
 }
+#highlited_content:hover{
+    cursor: pointer;
+    animation: blink 2.5s infinite;
+}
 #left_content{
     position: relative;
     margin:180px 0px 12px 2px;
@@ -176,5 +180,31 @@ body{
     }
     100%{
         transform: translateX(-1104px);
+    }
+}
+@keyframes blink {
+    0%{
+        opacity: 0;
+        color: burlywood;
+    }
+    20%{
+        opacity: 1;
+        color: rgb(122, 18, 219);
+    }
+    40%{
+        opacity: 0;
+        color: rgb(64, 121, 7);
+    }
+    60%{
+        opacity: 1;
+        color: rgb(8, 135, 140);
+    }
+    80%{
+        opacity: 0;
+        color: rgb(214, 63, 8);
+    }
+    100%{
+        opacity: 1;
+        color: rgb(43, 43, 43);
     }
 }
