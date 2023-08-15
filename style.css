@@ -119,9 +119,9 @@ body{
     display: flex;
     flex-direction: row;
     margin-left: 55rem;
-    font-family: 'Cinzel';
+    font-family: 'Leyton Personal';
     font-weight: 800;
-    color: rgb(239, 71, 141);
+    color: #FEBE00;
 }
 .nav_heading{
     margin:  12px 2rem 0px  0.5rem;
@@ -188,7 +188,8 @@ body{
 
 }
 #back_icon{
-    position: relative;
+    /* display: block; */
+    /* position: fixed; */
     /* margin-top: 30px; */
     margin-left: 4px;
     margin-top: 5px;
@@ -197,7 +198,8 @@ body{
     background-color: #606060; */
 }
 #pseudo_navBar{
-    position: relative;
+    /* display: block; */
+    /* position:fixed; */
     /* height: 34px; */
     width: 31.6rem;
     margin-top: 3px;
@@ -286,6 +288,11 @@ body{
     color: bisque;
     /* margin-left: 8px; */
     /* color: blueviolet; */
+}
+#upward{
+    /* position: relative; */
+    left: 29rem;
+    z-index: 3;
 }
 #right_content{
     height: 30rem;
