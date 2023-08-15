@@ -88,7 +88,7 @@ body{
     margin:120px 0px 12px 2px;
     /* position: absolute; */
     overflow: hidden;
-    height: 20rem;
+    height: 24rem;
     width: 370px;
     /* margin-left: 45rem; */
     /* margin-top: 0.5rem; */
@@ -111,7 +111,7 @@ body{
     display: flex;
     position: absolute;
     width: 1480px;
-    height: 3.3rem;
+    height: 6.6rem;
     animation: slide 16s infinite ease-in;
     
     /* z-index: -3; */
@@ -121,7 +121,7 @@ body{
 
 .image_content{
     width: 370px;
-    height: 3.3rem;
+    height: 6.6rem;
     font-family: 'Edu SA Beginner';
     font-size: 16px;
     position: relative;
@@ -135,9 +135,9 @@ body{
 }
 #play-pause{
     display: none;
-    position: absolute;
-    top: 40%;
-    left: 68%;
+    position: relative;
+    /* top: 40%;
+    left: 68%; */
     z-index: 5;
     opacity: 1;
     animation: fade 1.5s 1;
