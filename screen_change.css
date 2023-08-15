@@ -1,53 +1,167 @@
-*{
-    margin: 0px;
-    padding: 0px;
-}
 body{
-    /* background: rgb(58,98,156); */
-    background: linear-gradient( rgba(58,98,156,1) , rgba(121,9,119,1) , rgba(177,73,73,1) );
-    background-repeat: no-repeat;
-    
     overflow: auto;
-    /* height: 100vh; */
-}
-#nav_content{
-    display:none;
 }
 #home{
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
+}
+.cube{
+    position: relative;
+    width: 90px;
+    height: 90px;
+    /* border-radius: 26px; */
+    transform-style: preserve-3d;
+    /* transform: rotateX(-9deg); */
+    animation: ambient 6s linear infinite;
+}
+@keyframes ambient {
+    0%{
+        transform: rotateX(-9deg) rotateY(0deg);
+    }
+    100%{
+        transform: rotateX(-9deg) rotateY(360deg);
+    }
+    
+}
+.cube div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* border-radius: 26px; */
+    transform-style: preserve-3d;
+}
+.cube div span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* border-radius: 26px; */
+    background: linear-gradient(#151515, rgb(195, 42, 67));
+    transform: rotateY(calc(90deg *var(--i))) translateZ(45px);
+}
+.top{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 90px;
+    width: 90px;
+    /* border-radius: 26px; */
+    background: #1f1f1f;
+    transform: rotateX(90deg) translateZ(45px);
+}
+.top::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height:90px;
+    width: 90px;
+    /* border-radius: 26px; */
+    background: rgb(195, 42, 67);
+    transform: translateZ(-100px);
+    filter: blur(10px);
+    box-shadow: 0 0 36px rgb(195, 42, 67,0.2),
+        0 0 60px rgb(195, 42, 67,0.4), 
+        0 0 90px rgb(195, 42, 67,0.6),  
+        0 0 120px rgb(195, 42, 67,0.8),  
+        0 0 140px rgb(195, 42, 67,1) 
+         ;
+}
+#nav_content{
+    display: none;
+}
+#about_me{
+    width: 370px;
 }
 #right_content{
-    /* height: 30rem;*/
-    width: 375px; 
-    margin: 0px;
+    margin-left: 0px;
+    width: 370px;
 }
 #left_content{
-    margin: 0px;
-    /* border-radius: 24px; */
-}
-#left_content img{
-    /* margin: 5rem 0.5rem 2rem 24rem; */
-    border-radius: 24px;
+    position: relative;
+    margin:120px 0px 12px 2px;
+    /* position: absolute; */
+    overflow: hidden;
+    height: 20rem;
     width: 370px;
+    /* margin-left: 45rem; */
+    /* margin-top: 0.5rem; */
 }
 
-#icons{
+#slide_images{
     display: flex;
-    flex-direction: row;
-}
-.main_content{
+    /* flex-direction: column; */
     width: 370px;
+    animation: slide 16s infinite ease-in;
+}
+#slide_images img{
+    width: 370px;
+    height: 15rem;
+    border-radius: 7px;
+    margin-bottom: 12px;
+    /* margin-left: 24px; */
+}
+#slide_content{
+    display: flex;
+    position: absolute;
+    width: 1480px;
+    height: 3.3rem;
+    animation: slide 16s infinite ease-in;
+    
+    /* z-index: -3; */
+    /* overflow: hidden; */
+}
+
+
+.image_content{
+    width: 370px;
+    height: 3.3rem;
+    font-family: 'Edu SA Beginner';
+    font-size: 16px;
+    position: relative;
     overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+    text-align: center;
+    background-color: #606060;
+    color: burlywood;
+    border: 2px solid black;
+    border-radius: 14px;
+     
 }
-#facebook{
-    margin: 0rem 0.3rem 1.5rem 3rem;
+#play-pause{
+    display: none;
+    position: absolute;
+    top: 40%;
+    left: 68%;
+    z-index: 5;
+    opacity: 1;
+    animation: fade 1.5s 1;
 }
-#twitter{
-    margin: 0rem 0.3rem 1.5rem 3rem;
-}
-#instagram{
-    margin: 0rem 0.3rem 1.5rem 3rem;
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(-370px);
+    }
+    50%{
+        transform: translateX(-370px);
+    }
+    55%{
+        transform: translateX(-740px);
+    }
+    75%{
+        transform: translateX(-740px);
+    }
+    80%{
+        transform: translateX(-1110px);
+    }
+    100%{
+        transform: translateX(-1110px);
+    }
 }

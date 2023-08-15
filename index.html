@@ -6,10 +6,21 @@
     <title>CEST</title>
     <link rel="website icon" id="web_icon" type="png" href="CEST White Logo.png" style="border-radius: 20px;">
     <link rel="stylesheet" href="style.css">
-    <!-- <link rel="stylesheet" media="screen and (max-width:1500px)" href="screen_change.css"> -->
+    <link rel="stylesheet" media="screen and (max-width:1500px)" href="screen_change.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Indie Flower|Merriweather Sans|Tilt Prism|Cinzel|Playball|Monoton|Bad Script|Edu SA Beginner|Playfair Display">
 </head>
 <body>
+    <div id="shape">
+        <div class="cube">
+            <div class="top"></div>
+            <div>
+                <span style="--i:0;"></span>
+                <span style="--i:1;"></span>
+                <span style="--i:2;"></span>
+                <span style="--i:3;"></span>
+            </div>
+        </div>
+    </div>
     <nav id="nav_bar">
         <ul class="nav_items" id="nav_items">
             <li class="nav_heading"><img id="logo" src="my_logo.jpg" alt="lg"></li>
@@ -29,7 +40,7 @@
             <h3 class="heading_secondary" style="font-family: 'Monoton';">induction</h3>
         </div>
         <div id="about_content">
-            <span class="main_content" > Commodi obcaecati atque fugiat voluptates mollitia tempore odit fugit nam eum in <span id="highlited_content" class="main_content" style="font-family:'Bad Script';color: rgb(95, 57, 8);">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </span>debitis, maxime aliquam aut voluptas impedit.
+            <span class="main_content" > Commodi obcaecati atque fugiat voluptates mollitia tempore odit fugit nam eum in <span id="highlited_content" class="main_content" style="font-family:'Bad Script';color: rgb(231, 146, 35);">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </span>debitis, maxime aliquam aut voluptas impedit.
             </span>
         </div>
         <div id="about_me">
@@ -117,20 +128,9 @@
         </div>
         <button id="btn" 
         onclick="document.getElementById('about_content').style.display='none'
-        document.getElementById('about_me').style.display='block'"
-        >KNOW MORE</button>
+        document.getElementById('about_me').style.display='block'">KNOW MORE</button>
         
-        <div id="shape">
-            <div class="cube">
-                <div class="top"></div>
-                <div>
-                    <span style="--i:0;"></span>
-                    <span style="--i:1;"></span>
-                    <span style="--i:2;"></span>
-                    <span style="--i:3;"></span>
-                </div>
-            </div>
-        </div>
+       
         
     </div>
     <div id="left_content"
@@ -138,7 +138,7 @@
              document.getElementById('slide_content').style.animationPlayState='paused'
              document.getElementById('play-pause').style.display='block'">
         <div id="slide_images">
-            <img src="ellora_caves.jpg" alt="ellora_caves">
+            <img src="ellora_caves.jpg" alt="ellora_caves" >
             <img src="mysore.jpg" alt="mysore">
             <img src="lotus-temple-delhi.jpg" alt="photo">
             <!-- <img src="The-Eiffel-Tower.jpg" alt="The-Eiffel-Tower"> -->
