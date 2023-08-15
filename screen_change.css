@@ -83,6 +83,16 @@ body{
     margin-left: 4.5px;
     width: 370px;
 }
+.main_content{
+    /* text-overflow: ellipsis; */
+    font-family: 'Playball';
+    font-weight: 150;
+    font-size: 1rem;
+    word-spacing: 2px;
+    color: rgb(237, 255, 149);
+    /* margin-left: 8px; */
+    /* color: blueviolet; */
+}
 #left_content{
     position: relative;
     margin:180px 0px 12px 2px;
