@@ -89,7 +89,7 @@ body{
     /* position: absolute; */
     overflow: hidden;
     height: 24rem;
-    width: 370px;
+    width: 368px;
     /* margin-left: 45rem; */
     /* margin-top: 0.5rem; */
 }
@@ -97,11 +97,11 @@ body{
 #slide_images{
     display: flex;
     /* flex-direction: column; */
-    width: 370px;
+    width: 368px;
     animation: slide 16s infinite ease-in;
 }
 #slide_images img{
-    width: 370px;
+    width: 368px;
     height: 15rem;
     border-radius: 7px;
     margin-bottom: 12px;
@@ -110,7 +110,7 @@ body{
 #slide_content{
     display: flex;
     position: absolute;
-    width: 1480px;
+    width: 1470px;
     height: 6.6rem;
     animation: slide 16s infinite ease-in;
     
@@ -120,7 +120,7 @@ body{
 
 
 .image_content{
-    width: 370px;
+    width: 368px;
     height: 6.6rem;
     font-family: 'Edu SA Beginner';
     font-size: 16px;
@@ -150,21 +150,21 @@ body{
         transform: translateX(0);
     }
     30%{
-        transform: translateX(-370px);
+        transform: translateX(-368px);
     }
     50%{
-        transform: translateX(-370px);
+        transform: translateX(-368px);
     }
     55%{
-        transform: translateX(-740px);
+        transform: translateX(-736px);
     }
     75%{
-        transform: translateX(-740px);
+        transform: translateX(-736px);
     }
     80%{
-        transform: translateX(-1110px);
+        transform: translateX(-1104px);
     }
     100%{
-        transform: translateX(-1110px);
+        transform: translateX(-1104px);
     }
 }
