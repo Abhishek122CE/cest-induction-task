@@ -73,6 +73,9 @@ body{
 #nav_content{
     display: none;
 }
+#pseudo_navBar{
+    width: 364px;
+}
 #about_me{
     width: 370px;
 }
