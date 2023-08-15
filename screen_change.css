@@ -89,7 +89,7 @@ body{
     /* text-overflow: ellipsis; */
     font-family: 'Playball';
     font-weight: 150;
-    font-size: 1rem;
+    font-size: 1.6rem;
     word-spacing: 2px;
     color: rgb(237, 255, 149);
     /* margin-left: 8px; */
@@ -101,7 +101,7 @@ body{
 }
 #left_content{
     position: relative;
-    margin: 150px 0px 12px 2px;
+    margin: 180px 0px 12px 2px;
     /* position: absolute; */
     overflow: hidden;
     height: 24rem;
