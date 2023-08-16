@@ -218,7 +218,8 @@ body{
 .insti_logo img{
     height: 70px;
     width: 70px;
-    margin: 4px 8px 16px 8px ;
+    margin: 14px 8px 16px 8px ;
+    /* margin: auto; */
 }
 .insti_info h3{
      color: bisque;
@@ -244,7 +245,7 @@ body{
     height: 108px;
     width: 90px;
     background-color: #1f1f1f;
-    margin: 6px 6px 6px 6px;
+    margin: 0px 6px 16px 6px;
     border-radius: 6px;
 }
 .skill_info img{
@@ -277,7 +278,7 @@ body{
     /* width: -moz-fit-content; */
     width: 32rem;
     /* margin: auto; */
-    margin: 8px 8px 8px 8px;
+    margin: 0px 8px 8px 8px;
     background-color: #1f1f1f;
     border-radius: 8px;
 }
@@ -313,7 +314,7 @@ body{
     font-size: 27px;
     word-spacing: 2px;
     color: bisque;
-    /* margin-left: 8px; */
+    margin-left: 8px;
     /* color: blueviolet; */
 }
 #upward{
