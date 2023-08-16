@@ -119,7 +119,7 @@ body{
     display: flex;
     flex-direction: row;
     margin-left: 55rem;
-    font-family: 'Leyton Personal';
+    font-family: 'Tilt Prism';
     font-weight: 800;
     color: #FEBE00;
 }
@@ -139,7 +139,7 @@ body{
     /* font-family: ; */
     letter-spacing: 2px;
     font-size: 6.6rem;
-    font-weight: bold;
+    font-weight: 300;
     background-image: linear-gradient(
      to right,
      #462523 0,
@@ -233,6 +233,33 @@ body{
     border: 1.5px solid saddlebrown;
     margin: 0px 0px 8px 0px ;
     border-radius: 5px;
+}
+#skills_name{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* width: 31rem; */
+}
+.skill_info{
+    height: 108px;
+    width: 90px;
+    background-color: #1f1f1f;
+    margin: 6px 6px 6px 6px;
+    border-radius: 6px;
+}
+.skill_info img{
+    height: 70px;
+    width: 70px;
+    margin: 6px 10px 0px 10px;
+    border-radius: 6px;
+}
+.skill_info h4{
+    /* margin-left: 20px; */
+    text-align: center;
+    font-size: 16px;
+    color: beige;
+    font-weight: 400;
+    margin-bottom: 4px;
 }
 .hobbies{
     display: flex;
