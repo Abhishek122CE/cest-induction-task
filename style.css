@@ -448,6 +448,7 @@ button{
     background-image: linear-gradient( 99deg,  rgba(115,18,81,1) 10.6%, rgba(28,28,28,1) 118% );
 }
 #btn{
+    cursor: pointer;
     border-radius: 12px;
     height: 30px;
     width: 120px ;
