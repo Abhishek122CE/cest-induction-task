@@ -182,6 +182,7 @@ body{
     width: 32rem;
     overflow: auto;
     animation: fade 1.5s 1;
+    scroll-behavior: smooth;
     /* margin-bottom: 12rem; */
     /* border: 3px solid black;
     border-radius: 4px; */
@@ -206,10 +207,29 @@ body{
     /* margin-top: -3px; */
     background-color:#551342;
 }
+#intro_navigation{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    /* width: 1rem; */
+    margin:5rem 0px 5rem 31.2rem;
+    /* background: #551342; */
+    /* z-index: -1; */
+}
+#intro_navigation i{
+    margin: 26px 0px 26px 0px;
+}
+#intro_navigation a.fa-solid :active{
+    color: #FEBE00;
+}
 #my_details{
     margin-top: 4px;
     /* padding-left: 8px; */
 }
+#my_education,#my_skills,#my_hobbies{
+    height: 25rem;
+}
+
 .insti_logo{
     display: flex;
     flex-direction: column;
@@ -278,7 +298,7 @@ body{
     /* width: -moz-fit-content; */
     width: 32rem;
     /* margin: auto; */
-    margin: 0px 8px 8px 8px;
+    margin: 0px 8px 7.69rem 8px;
     background-color: #1f1f1f;
     border-radius: 8px;
 }
@@ -534,7 +554,7 @@ button{
     
 }
 ::-webkit-scrollbar{
-    width: 6px;
+    width: 0px;
     height: 6px;
 }
 ::-webkit-scrollbar-track{
